@@ -79,14 +79,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('list', {
-    url: '/list',
-    templateUrl: 'templates/list.html'
-  })
-
   .state('detail', {
     url: '/detail',
     templateUrl: 'templates/detail.html'
+  })
+
+  .state('map', {
+    url: '/map',
+    templateUrl: 'templates/map.html'
+  })
+
+
+  .state('filter', {
+    url: '/filter',
+    abstract: true,
+    templateUrl: 'templates/filter_menu.html'
+  })
+
+  .state('filter.list', {
+    url: '/list',
+    views: {
+      'filter-list': {
+        templateUrl: 'templates/list.html',
+        
+      }
+    }
   })
 
   // if none of the above states are matched, use this as the fallback
