@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+.profile-bg{
+	height: 100%;
+	width: 100%;
+}
+
+.bg-custom{
+	background: #5D001D;
+}
+
+.bg-custom2{
+	background: #F5F5F5;
+}
+
+.list-custom{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.item-custom{
+	box-shadow: 2px 2px 4px 0 #ccc;
+}
